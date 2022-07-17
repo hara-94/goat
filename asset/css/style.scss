@@ -20,6 +20,8 @@
 
 .heading {
   font-family: 'Shippori Antique', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
 }
 
 .header {
@@ -56,10 +58,6 @@
       margin-left: 16px;
     }
   }
-
-  &__item {
-
-  }
 }
 
 .main-image {
@@ -80,8 +78,6 @@
   }
 
   &__heading {
-    font-size: 32px;
-    font-weight: bold;
     margin-bottom: 24px;
   }
 
@@ -126,11 +122,6 @@
     justify-content: space-between;
   }
 
-  &__heading {
-    font-size: 32px;
-    font-weight: bold;
-  }
-
   &__text {
     width: 100%;
     word-break: break-word;
@@ -165,11 +156,6 @@
     justify-content: space-between;
   }
 
-  &__heading {
-    font-size: 32px;
-    font-weight: bold;
-  }
-
   &__text {
     width: 100%;
     word-break: break-word;
@@ -184,17 +170,58 @@
   }
 }
 
+.access {
+  &__heading {
+    margin-bottom: 24px;
+  }
+
+  &__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__map {
+    width: 60%;
+
+    &__map {
+      width: 100%;
+    }
+  }
+
+  &__text {
+    width: 35%;
+  }
+}
+
 .footer {
   width: 100%;
   height: 80px;
 
   &__inner {
+    padding: 20px 0;
     max-width: 810px;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
   }
 
   &__title {
+    margin-right: 24px;
     font-size: 30px;
     font-weight: bold;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__address {
+    width: 49%;
+  }
+
+  &__schedule {
+    width: 49%;
   }
 }
