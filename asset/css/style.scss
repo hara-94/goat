@@ -1,0 +1,192 @@
+.section {
+  width: 100%;
+  border: 2px solid lightgray;
+
+  &__inner {
+    width: 100%;
+    max-width: 810px;
+    margin: 0 auto;
+    padding: 50px 0;
+
+    &--large {
+      max-width: 100%;
+    }
+  }
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__inner {
+    width: 100%;
+    max-width: 810px;
+    margin: 0 auto;
+  }
+
+  &__nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 810px;
+  }
+
+  &__title {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+
+    & > * + * {
+      margin-left: 16px;
+    }
+  }
+
+  &__item {
+
+  }
+}
+
+.main-image {
+  &__image {
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-image: url("../image/dummy/3000x2000.png");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.concept {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__heading {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 24px;
+  }
+
+  &__content {
+    width: 100%;
+  }
+
+  &__text {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    word-break: break-word;
+  }
+
+  &__button {
+    display: block;
+    padding: 10px 30px;
+    width: fit-content;
+    height: 40px;
+    margin: 0 auto;
+    border: 1px solid lightgray;
+  }
+}
+
+.game {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__image {
+    display: block;
+    width: 45%;
+    height: 300px;
+    background-color: lightgray;
+  }
+
+  &__content {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__heading {
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  &__text {
+    width: 100%;
+    word-break: break-word;
+  }
+
+  &__button {
+    display: block;
+    padding: 10px 30px;
+    width: fit-content;
+    height: 40px;
+    border: 1px solid lightgray;
+  }
+}
+
+.drink {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__image {
+    display: block;
+    width: 45%;
+    height: 300px;
+    background-color: lightgray;
+  }
+
+  &__content {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__heading {
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  &__text {
+    width: 100%;
+    word-break: break-word;
+  }
+
+  &__button {
+    display: block;
+    padding: 10px 30px;
+    width: fit-content;
+    height: 40px;
+    border: 1px solid lightgray;
+  }
+}
+
+.footer {
+  width: 100%;
+  height: 80px;
+
+  &__inner {
+    max-width: 810px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-size: 30px;
+    font-weight: bold;
+  }
+}
