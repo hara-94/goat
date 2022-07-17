@@ -80,6 +80,11 @@
   display: flex;
   justify-content: space-between;
 }
+.header__item {
+  font-family: "Qonquer";
+  font-weight: bold;
+  font-size: 22px;
+}
 
 .main-image__image {
   width: 100%;
