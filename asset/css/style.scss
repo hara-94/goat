@@ -54,12 +54,9 @@
   }
 
   &__list {
+    width: 50%;
     display: flex;
     justify-content: space-between;
-
-    & > * + * {
-      margin-left: 16px;
-    }
   }
 }
 
@@ -67,7 +64,7 @@
   &__image {
     width: 100%;
     height: 100vh;
-    background-image: url("../image/dummy/3000x2000.png");
+    background-image: url("../image/dummy/gambling-g20231e66d_1920.jpg");
     background-size: cover;
     background-position: center;
     //TODO: safari対応
