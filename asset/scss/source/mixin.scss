@@ -1,0 +1,30 @@
+@mixin heading {
+  font-family: 'Qonquer', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: black;
+  border-bottom: 2px solid black;
+  padding-bottom: 6px;
+}
+
+@mixin headingRed {
+  color: red;
+}
+
+@mixin text {
+  line-height: 1.3;;
+  font-family: 'Sawarabi Gothic', sans-serif;
+  color: black;
+}
+
+@mixin button {
+  display: block;
+  padding: 10px 30px;
+  width: fit-content;
+  height: 40px;
+  margin: 0 auto;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-family: 'Sawarabi Gothic', sans-serif;
+}
