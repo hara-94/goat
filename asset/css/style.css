@@ -2,6 +2,60 @@
   font-family: "Qonquer";
   src: url(../font/Qonquer.ttf);
 }
+@-webkit-keyframes expand-size {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+  }
+}
+@keyframes expand-size {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+  }
+}
+@-webkit-keyframes expand-width {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes expand-width {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@-webkit-keyframes fadeUp {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
 /*! destyle.css v3.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model and set borders */
 /* ============================================ */
@@ -421,9 +475,26 @@ th {
   justify-content: space-between;
 }
 .header__item {
+  position: relative;
   font-family: "Qonquer";
   font-weight: bold;
   font-size: 22px;
+}
+.header__item:hover:after {
+  -webkit-animation-name: expand-width;
+          animation-name: expand-width;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.header__item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  height: 2px;
+  background-color: white;
 }
 
 .footer {
@@ -525,6 +596,7 @@ th {
 }
 .horizontal-card__content__button {
   align-self: flex-end;
+  position: relative;
   display: block;
   padding: 10px 30px;
   width: -webkit-fit-content;
@@ -536,6 +608,25 @@ th {
   color: white;
   font-weight: bold;
   font-family: "Sawarabi Gothic", sans-serif;
+}
+.horizontal-card__content__button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 0;
+  height: 100%;
+  background-color: white;
+  opacity: 0.2;
+}
+.horizontal-card__content__button:hover:after {
+  -webkit-animation-name: expand-width;
+          animation-name: expand-width;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .horizontal-card--access {
@@ -625,4 +716,19 @@ th {
 
 .drink-main-image__fullscreen__image {
   background-image: url("../image/dummy/gambling-g20231e66d_1920.jpg");
+}
+
+.js-section--hidden {
+  opacity: 0;
+  position: relative;
+  top: 90px;
+}
+
+.js-section--shown {
+  -webkit-animation-name: fadeUp;
+          animation-name: fadeUp;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }

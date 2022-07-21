@@ -18,6 +18,7 @@
 }
 
 @mixin button {
+  position: relative;
   display: block;
   padding: 10px 30px;
   width: fit-content;
@@ -27,4 +28,24 @@
   color: white;
   font-weight: bold;
   font-family: 'Sawarabi Gothic', sans-serif;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 0;
+    height: 100%;
+    background-color: white;
+    opacity: 0.2;
+  }
+
+  &:hover {
+    &:after {
+      animation-name: expand-width;
+      animation-duration: 0.5s;
+      animation-fill-mode: forwards;
+    }
+  }
 }

@@ -39,8 +39,26 @@
   }
 
   &__item {
+    position: relative;
     font-family: 'Qonquer';
     font-weight: bold;
     font-size: 22px;
+
+    &:hover {
+      &:after {
+        animation-name: expand-width;
+        animation-duration: 0.4s;
+        animation-fill-mode: forwards;
+      }
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: -2px;
+      height: 2px;
+      background-color: white;
+    }
   }
 }

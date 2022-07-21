@@ -1,5 +1,6 @@
 @import "source/variables.scss";
 @import "source/mixin.scss";
+@import "source/animation.scss";
 
 @import "source/reset.scss";
 
@@ -13,3 +14,5 @@
 @import "source/pages/index.scss";
 @import "source/pages/game.scss";
 @import "source/pages/drink.scss";
+
+@import "source/js/animation.scss";

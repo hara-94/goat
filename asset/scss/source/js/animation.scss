@@ -1,0 +1,11 @@
+.js-section--hidden {
+  opacity: 0;
+  position: relative;
+  top: 90px
+}
+
+.js-section--shown {
+  animation-name: fadeUp;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
