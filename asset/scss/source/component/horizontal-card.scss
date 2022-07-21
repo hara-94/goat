@@ -3,17 +3,43 @@
   justify-content: space-between;
   align-items: stretch;
 
+  &--reverse {
+    flex-direction: row-reverse;
+  }
+
+  @include isTablet {
+    flex-direction: column;
+    align-items: center;
+  }
+
   &__image {
+    position: relative;
     display: block;
     width: 48%;
-    height: 300px;
     background-color: lightgray;
+
+    &:before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      padding-top: 60%;
+    }
+
+    @include isTablet {
+      width: 90%;
+      margin-bottom: 16px;
+    }
   }
 
   &__content {
     width: 48%;
     display: flex;
     flex-direction: column;
+
+    @include isTablet {
+      width: 90%;
+    }
 
     &__heading {
       margin-bottom: 24px;
@@ -34,6 +60,10 @@
     &__button {
       align-self: flex-end;
       @include button;
+
+      @include isTablet {
+        margin-top: 24px;
+      }
     }
   }
 }
