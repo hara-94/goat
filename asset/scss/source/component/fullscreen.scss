@@ -1,0 +1,15 @@
+.fullscreen {
+  width: 100%;
+  height: calc(100vh - 60px); //header分下げる, TODO: safari対応
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__text {
+
+  }
+}

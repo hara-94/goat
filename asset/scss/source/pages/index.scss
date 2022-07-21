@@ -1,0 +1,32 @@
+.main-image {
+  &__fullscreen {
+    &__image {
+      //TODO: cssファイルからのパスになっているのでなんとかする
+      background-image: url("../image/dummy/gambling-g20231e66d_1920.jpg");
+      background-attachment: fixed;
+    }
+  }
+}
+
+.concept {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__heading {
+    margin-bottom: 24px;
+    @include heading;
+
+    &--red {
+      color: red;
+    }
+  }
+
+  &__text {
+    width: 80%;
+    max-width: 800px;
+    @include text;
+  }
+}

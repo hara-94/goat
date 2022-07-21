@@ -1,0 +1,10 @@
+.main {
+  position: relative;
+  top: 60px;
+  background-color: $main-color;
+  padding-bottom: 40px;
+
+  & > * + * {
+    margin-top: 40px;
+  }
+}

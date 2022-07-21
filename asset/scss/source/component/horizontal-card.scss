@@ -1,0 +1,79 @@
+.horizontal-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+
+  &__image {
+    display: block;
+    width: 48%;
+    height: 300px;
+    background-color: lightgray;
+  }
+
+  &__content {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+
+    &__heading {
+      margin-bottom: 24px;
+      @include heading;
+
+      &--red {
+        color: red;
+      }
+    }
+
+    &__text {
+      width: 100%;
+      flex-grow: 1;
+      word-break: break-word;
+      @include text;
+    }
+
+    &__button {
+      align-self: flex-end;
+      @include button;
+    }
+  }
+}
+
+.horizontal-card--access {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+
+  &__image {
+    display: block;
+    width: 35%;
+    background-color: lightgray;
+  }
+
+  &__content {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+
+    &__heading {
+      margin-bottom: 24px;
+      @include heading;
+
+      &--red {
+        color: red;
+      }
+    }
+
+    &__text {
+      width: 100%;
+      flex-grow: 1;
+      word-break: break-word;
+      @include text;
+    }
+
+    &__map {
+      display: block;
+      width: 80%;
+      align-self: center;
+    }
+  }
+}
