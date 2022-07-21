@@ -1,0 +1,9 @@
+.main {
+  position: relative;
+  top: 60px;
+  background-color: $main-color;
+
+  & > * + * {
+    margin-bottom: 40px;
+  }
+}

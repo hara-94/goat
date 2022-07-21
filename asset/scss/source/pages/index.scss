@@ -1,13 +1,3 @@
-.main {
-  position: relative;
-  top: 60px;
-  background-color: $main-color;
-
-  & > * + * {
-    margin-top: 40px;
-  }
-}
-
 .main-image {
   &__fullscreen {
     &__image {
