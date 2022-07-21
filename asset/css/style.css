@@ -583,9 +583,10 @@ th {
   position: relative;
   top: 60px;
   background-color: rgb(240, 240, 240);
+  padding: 40px 0;
 }
 .main > * + * {
-  margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 .main-image__fullscreen__image {
