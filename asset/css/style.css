@@ -467,7 +467,7 @@ th {
 }
 
 .fullscreen {
-  width: 100vw;
+  width: 100%;
   height: calc(100vh - 60px);
 }
 .fullscreen__image {
@@ -583,7 +583,7 @@ th {
   position: relative;
   top: 60px;
   background-color: rgb(240, 240, 240);
-  padding: 40px 0;
+  padding-bottom: 40px;
 }
 .main > * + * {
   margin-top: 40px;
