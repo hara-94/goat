@@ -13,18 +13,9 @@
   }
 
   &__image {
-    position: relative;
     display: block;
     width: 48%;
     background-color: lightgray;
-
-    &:before {
-      content: "";
-      position: absolute;
-      display: block;
-      width: 100%;
-      padding-top: 60%;
-    }
 
     @include isTablet {
       width: 90%;
@@ -73,16 +64,39 @@
   justify-content: space-between;
   align-items: stretch;
 
+  @include isTablet {
+    flex-direction: column;
+    align-items: center;
+  }
+
   &__image {
     display: block;
-    width: 35%;
+    width: 30%;
     background-color: lightgray;
+
+    @include isTablet {
+      display: none;
+    }
+
+    &--sp {
+      display: none;
+
+      @include isTablet {
+        display: block;
+        width: 90%;
+        margin-bottom: 16px;
+      }
+    }
   }
 
   &__content {
-    width: 60%;
+    width: 65%;
     display: flex;
     flex-direction: column;
+    
+    @include isTablet {
+      width: 90%;
+    }    
 
     &__heading {
       margin-bottom: 24px;
@@ -104,6 +118,10 @@
       display: block;
       width: 80%;
       align-self: center;
+
+      @include isTablet {
+        width: 80%;
+      }
     }
   }
 }
