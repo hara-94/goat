@@ -49,3 +49,27 @@
     }
   }
 }
+
+@mixin max-screen($break-point) {
+  @media screen and (max-width: $break-point) {
+      @content;
+  }
+}
+
+@mixin min-screen($break-point) {
+  @media screen and (min-width: $break-point) {
+      @content;
+  }
+}
+
+@mixin isTablet {
+  @include max-screen(960px) {
+    @content;
+  }
+}
+
+@mixin isSp {
+  @include max-screen(520px) {
+    @content;
+  }
+}
