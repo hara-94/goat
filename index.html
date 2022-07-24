@@ -12,6 +12,29 @@
   <title>Document</title>
 </head>
 <body>
+  <div class="header__hamburger" id="js-header-hamburger">
+    <div class="hamburger">
+      <div class="hamburger__close-icon" id="js-hamburger-close">
+        <img src="./asset/image/close.png" alt="" class="hamburger__close-icon__image">
+      </div>
+      <div class="hamburger__inner">
+        <ul class="hamburger__list">
+          <li class="hamburger__item js-hamburger-item js-hamburger-item--hidden">
+            <a href="" class="hamburger__item__link">CONCEPT</a>
+          </li>
+          <li class="hamburger__item js-hamburger-item js-hamburger-item--hidden">
+            <a href="" class="hamburger__item__link">GAME</a>
+          </li>
+          <li class="hamburger__item js-hamburger-item js-hamburger-item--hidden">
+            <a href="" class="hamburger__item__link">DRINK</a>
+          </li>
+          <li class="hamburger__item js-hamburger-item js-hamburger-item--hidden">
+            <a href="" class="hamburger__item__link">ACCESS</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
   <header class="header">
     <div class="header__inner">
       <div class="header__nav">
@@ -32,10 +55,12 @@
             <a href="">ACCESS</a>
           </li>
         </ul>
-        <div class="header__icon">
-          <span class="header__icon__bar"></span>
-          <span class="header__icon__bar"></span>
-          <span class="header__icon__bar"></span>
+        <div class="header__icon" id="js-hamburger-icon">
+          <div class="header__icon__inner">
+            <span class="header__icon__bar header__icon__bar--top" id="js-hamburger-icon-top"></span>
+            <span class="header__icon__bar header__icon__bar--middle" id="js-hamburger-icon-middle"></span>
+            <span class="header__icon__bar header__icon__bar--bottom" id="js-hamburger-icon-bottom"></span>
+          </div>
         </div>
       </div>
     </div>
@@ -119,5 +144,6 @@
     </div>
   </footer>
   <script src="./script/pages/index.js"></script>
+  <script src="./script/component/hamburger.js"></script>
 </body>
 </html>
