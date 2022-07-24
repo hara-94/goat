@@ -7,8 +7,9 @@ const access = document.getElementById("js-access");
 
 function showSection(section) {
   const offsetTop = section.offsetTop;
+  const sectionY = section.getBoundingClientRect().y;
   const currentOffsetY = window.scrollY;
-  if (currentOffsetY > offsetTop - (windowHeight * 0.7)) {
+  if (currentOffsetY > (sectionY + currentOffsetY) - (windowHeight * 0.9)) {
     section.classList.add("js-section--shown")
   }
 }

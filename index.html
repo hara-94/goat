@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&family=Shippori+Antique&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="./asset/css/style.css">
   <title>Document</title>
 </head>
@@ -65,12 +66,19 @@
       </div>
     </div>
   </header>
-  <div class="main">
-    <div class="main-image section">
-      <div class="main-image__fullscreen fullscreen">
-        <div class="main-image__fullscreen__image fullscreen__image"></div>
+  <div class="main-image section">
+    <div class="full-swiper">
+      <div class="full-swiper__swiper swiper">
+        <div class="full-swiper__wrapper swiper-wrapper">
+          <div class="main-image__slide full-swiper__slide swiper-slide"></div>
+          <div class="main-image__slide full-swiper__slide swiper-slide"></div>
+          <div class="main-image__slide full-swiper__slide swiper-slide"></div>
+        </div>
+        <div class="swiper-pagination"></div>
       </div>
     </div>
+  </div>
+  <div class="main">
     <div class="concept section js-section--hidden" id="js-concept">
       <div class="concept__inner section__inner">
         <h2 class="concept__heading">CONCE<span class="concept__heading--red">P</span>T</h2>
@@ -145,5 +153,7 @@
   </footer>
   <script src="./script/pages/index.js"></script>
   <script src="./script/component/hamburger.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./script/component/swiper.js"></script>
 </body>
 </html>
