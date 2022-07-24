@@ -1,10 +1,10 @@
 .main-image {
-  &__fullscreen {
-    &__image {
-      //TODO: cssファイルからのパスになっているのでなんとかする
-      background-image: url("../image/dummy/gambling-g20231e66d_1920.jpg");
-      background-attachment: fixed;
-    }
+  position: fixed;
+  top: 60px;
+  
+  &__slide {
+    background-image: url("../image/dummy/gambling-g20231e66d_1920.jpg");
+    background-size: cover;
   }
 }
 
