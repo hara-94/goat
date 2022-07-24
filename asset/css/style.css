@@ -1,8 +1,13 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Qonquer";
   src: url(../font/Qonquer.ttf);
 }
-@-webkit-keyframes expand-size {
+/* color */
+/* font */
+/* index */
+/* TODO: scss化 */
+@-webkit-keyframes expandSize {
   0% {
     width: 0;
     height: 0;
@@ -12,7 +17,7 @@
     height: 100%;
   }
 }
-@keyframes expand-size {
+@keyframes expandSize {
   0% {
     width: 0;
     height: 0;
@@ -22,7 +27,7 @@
     height: 100%;
   }
 }
-@-webkit-keyframes expand-width {
+@-webkit-keyframes expandWidth {
   0% {
     width: 0;
   }
@@ -30,7 +35,7 @@
     width: 100%;
   }
 }
-@keyframes expand-width {
+@keyframes expandWidth {
   0% {
     width: 0;
   }
@@ -54,6 +59,162 @@
   100% {
     opacity: 1;
     top: 0;
+  }
+}
+@-webkit-keyframes hamburgerBarOpen {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top: 50%;
+    transform: translate(-50%);
+  }
+}
+@keyframes hamburgerBarOpen {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top: 50%;
+    transform: translate(-50%);
+  }
+}
+@-webkit-keyframes hamburgerTopBarClose {
+  0% {
+    opacity: 0;
+    top: 50%;
+    transform: translate(-50%);
+  }
+  100% {
+    opacity: 1;
+    top: calc(20% + 3px);
+    transform: translate(-50%, 0);
+  }
+}
+@keyframes hamburgerTopBarClose {
+  0% {
+    opacity: 0;
+    top: 50%;
+    transform: translate(-50%);
+  }
+  100% {
+    opacity: 1;
+    top: calc(20% + 3px);
+    transform: translate(-50%, 0);
+  }
+}
+@-webkit-keyframes hamburgerBottomBarClose {
+  0% {
+    opacity: 0;
+    top: 50%;
+    transform: translate(-50%);
+  }
+  100% {
+    opacity: 1;
+    top: auto;
+    bottom: 20%;
+    transform: translate(-50%, 0);
+  }
+}
+@keyframes hamburgerBottomBarClose {
+  0% {
+    opacity: 0;
+    top: 50%;
+    transform: translate(-50%);
+  }
+  100% {
+    opacity: 1;
+    top: auto;
+    bottom: 20%;
+    transform: translate(-50%, 0);
+  }
+}
+@-webkit-keyframes hamburgerIconOpen {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: 100%;
+    transform: translateX(100%);
+  }
+}
+@keyframes hamburgerIconOpen {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: 100%;
+    transform: translateX(100%);
+  }
+}
+@-webkit-keyframes hamburgerIconClose {
+  0% {
+    right: 100%;
+    transform: translateX(100%);
+  }
+  100% {
+    right: 0;
+    transform: translateX(0);
+  }
+}
+@keyframes hamburgerIconClose {
+  0% {
+    right: 100%;
+    transform: translateX(100%);
+  }
+  100% {
+    right: 0;
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes hamburgerOpen {
+  0% {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  100% {
+    opacity: 1;
+    width: 100%;
+    height: 100vh;
+  }
+}
+@keyframes hamburgerOpen {
+  0% {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  100% {
+    opacity: 1;
+    width: 100%;
+    height: 100vh;
+  }
+}
+@-webkit-keyframes hamburgerClose {
+  0% {
+    opacity: 1;
+    width: 100%;
+    height: 100vh;
+  }
+  100% {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+}
+@keyframes hamburgerClose {
+  0% {
+    opacity: 1;
+    width: 100%;
+    height: 100vh;
+  }
+  100% {
+    opacity: 0;
+    width: 0;
+    height: 0;
   }
 }
 /*! destyle.css v3.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
@@ -446,7 +607,7 @@ th {
   flex-direction: column;
   justify-content: center;
   position: fixed;
-  z-index: 999;
+  z-index: 500;
   color: white;
   background-color: black;
 }
@@ -456,6 +617,7 @@ th {
   margin: 0 auto;
 }
 .header__nav {
+  position: relative;
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -463,6 +625,7 @@ th {
   max-width: 1200px;
 }
 .header__title {
+  opacity: 0;
   font-size: 30px;
   font-weight: bold;
 }
@@ -481,10 +644,14 @@ th {
 }
 .header__icon {
   display: none;
-  position: relative;
   width: 45px;
   height: 45px;
   cursor: pointer;
+}
+.header__icon__inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 @media screen and (max-width: 520px) {
   .header__icon {
@@ -501,15 +668,22 @@ th {
   border-radius: 1px;
   background-color: white;
 }
-.header__icon__bar:nth-child(1) {
-  top: 20%;
+.header__icon__bar--top {
+  top: calc(20% + 3px);
 }
-.header__icon__bar:nth-child(2) {
+.header__icon__bar--middle {
   top: 50%;
   transform: translate(-50%);
 }
-.header__icon__bar:nth-child(3) {
+.header__icon__bar--bottom {
   bottom: 20%;
+}
+.header__hamburger {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: 1000;
 }
 .header__item {
   position: relative;
@@ -518,8 +692,8 @@ th {
   font-size: 22px;
 }
 .header__item:hover:after {
-  -webkit-animation-name: expand-width;
-          animation-name: expand-width;
+  -webkit-animation-name: expandWidth;
+          animation-name: expandWidth;
   -webkit-animation-duration: 0.4s;
           animation-duration: 0.4s;
   -webkit-animation-fill-mode: forwards;
@@ -636,6 +810,50 @@ th {
   background-size: cover;
   background-position: center;
 }
+.hamburger {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 1000;
+}
+.hamburger__close-icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+  padding: 8px;
+}
+.hamburger__close-icon__image {
+  width: 100%;
+  height: 100%;
+}
+.hamburger__inner {
+  width: 100%;
+  height: 100%;
+  padding: 20px 30px;
+}
+.hamburger__list {
+  width: 100%;
+  height: 100%;
+}
+.hamburger__item {
+  width: 100%;
+  height: 50px;
+  color: black;
+  font-size: 22px;
+}
+.hamburger__item__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 5px;
+  border-bottom: 2px solid black;
+  letter-spacing: 1px;
+  font-family: "Qonquer", sans-serif;
+}
+
 .section {
   width: 100%;
 }
@@ -729,8 +947,8 @@ th {
   opacity: 0.2;
 }
 .horizontal-card__content__button:hover:after {
-  -webkit-animation-name: expand-width;
-          animation-name: expand-width;
+  -webkit-animation-name: expandWidth;
+          animation-name: expandWidth;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
   -webkit-animation-fill-mode: forwards;
@@ -871,6 +1089,107 @@ th {
 .js-section--shown {
   -webkit-animation-name: fadeUp;
           animation-name: fadeUp;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.js-hamburger-bar--open {
+  -webkit-animation-name: hamburgerBarOpen;
+          animation-name: hamburgerBarOpen;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.js-hamburger-top-bar--close {
+  top: 50%;
+  transform: translate(-50%);
+  -webkit-animation-name: hamburgerTopBarClose;
+          animation-name: hamburgerTopBarClose;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.js-hamburger-bottom-bar--close {
+  top: 50%;
+  transform: translate(-50%);
+  -webkit-animation-name: hamburgerBottomBarClose;
+          animation-name: hamburgerBottomBarClose;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.js-hamburger-icon--open {
+  position: absolute;
+  right: 0;
+  -webkit-animation-name: hamburgerIconOpen;
+          animation-name: hamburgerIconOpen;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.js-hamburger-icon--close {
+  position: absolute;
+  right: 100%;
+  transform: translateX(100%);
+  -webkit-animation-name: hamburgerIconClose;
+          animation-name: hamburgerIconClose;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.js-hamburger--open {
+  -webkit-animation-name: hamburgerOpen;
+          animation-name: hamburgerOpen;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.js-hamburger--close {
+  -webkit-animation-name: hamburgerClose;
+          animation-name: hamburgerClose;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.js-hamburger-item--hidden {
+  opacity: 0;
+  position: relative;
+  top: 50px;
+}
+
+.js-hamburger-item--shown {
+  -webkit-animation-name: fadeUp;
+          animation-name: fadeUp;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
   -webkit-animation-fill-mode: forwards;

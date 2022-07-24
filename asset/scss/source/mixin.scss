@@ -43,7 +43,7 @@
 
   &:hover {
     &:after {
-      animation-name: expand-width;
+      animation-name: expandWidth;
       animation-duration: 0.5s;
       animation-fill-mode: forwards;
     }

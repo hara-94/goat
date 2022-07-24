@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   position: fixed;
-  z-index: 999;
+  z-index: $zDefaultLow;
   color: white;
   background-color: black;
 
@@ -16,6 +16,7 @@
   }
 
   &__nav {
+    position: relative;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -24,6 +25,7 @@
   }
 
   &__title {
+    opacity: 0;
     font-size: 30px;
     font-weight: bold;
 
@@ -44,10 +46,15 @@
 
   &__icon {
     display: none;
-    position: relative;
     width: 45px;
     height: 45px;
     cursor: pointer;
+
+    &__inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
 
     @include isSp {
       display: block;
@@ -63,17 +70,25 @@
       border-radius: 1px;
       background-color: white;
 
-      &:nth-child(1) {
-        top: 20%;
+      &--top {
+        top: calc(20% + 3px);
       }
-      &:nth-child(2) {
+      &--middle {
         top: 50%;
         transform: translate(-50%);
       }
-      &:nth-child(3) {
+      &--bottom {
         bottom: 20%; 
       }
     }
+  }
+
+  &__hamburger {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: $zDefaultHigh;
   }
 
   &__item {
@@ -84,7 +99,7 @@
 
     &:hover {
       &:after {
-        animation-name: expand-width;
+        animation-name: expandWidth;
         animation-duration: 0.4s;
         animation-fill-mode: forwards;
       }

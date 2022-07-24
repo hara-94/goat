@@ -9,3 +9,73 @@
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
 }
+
+.js-hamburger-bar--open {
+  animation-name: hamburgerBarOpen;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+}
+
+.js-hamburger-top-bar--close {
+  top: 50%;
+  transform: translate(-50%);
+  animation-name: hamburgerTopBarClose;
+  animation-duration: .4s;
+  animation-delay: .8s;
+  animation-fill-mode: forwards;
+}
+
+.js-hamburger-bottom-bar--close {
+  top: 50%;
+  transform: translate(-50%);
+  animation-name: hamburgerBottomBarClose;
+  animation-duration: .4s;
+  animation-delay: .8s;
+  animation-fill-mode: forwards;
+}
+
+.js-hamburger-icon--open {
+  position: absolute;
+  right: 0;
+  animation-name: hamburgerIconOpen;
+  animation-duration: 0.4s;
+  animation-delay: .4s;
+  animation-fill-mode: forwards;
+}
+
+.js-hamburger-icon--close {
+  position: absolute;
+  right: 100%;
+  transform: translateX(100%);
+  animation-name: hamburgerIconClose;
+  animation-duration: 0.4s;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
+}
+
+.js-hamburger--open {
+  animation-name: hamburgerOpen;
+  animation-delay: 1s;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+}
+
+.js-hamburger--close {
+  animation-name: hamburgerClose;
+  animation-duration: 0.4s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+.js-hamburger-item--hidden {
+  opacity: 0;
+  position: relative;
+  top: 50px
+}
+
+.js-hamburger-item--shown {
+  animation-name: fadeUp;
+  animation-delay: 1.2s;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
