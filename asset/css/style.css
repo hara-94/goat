@@ -632,7 +632,7 @@ th {
   color: red;
 }
 .header__list {
-  width: 50%;
+  width: 56%;
   display: flex;
   justify-content: space-between;
 }
@@ -689,6 +689,7 @@ th {
   font-family: "Qonquer";
   font-weight: bold;
   font-size: 22px;
+  letter-spacing: 1.5px;
 }
 .header__item:hover:after {
   -webkit-animation-name: expandWidth;
@@ -914,6 +915,7 @@ th {
   font-family: "Qonquer", sans-serif;
   font-size: 32px;
   font-weight: bold;
+  letter-spacing: 1.5px;
   color: black;
   border-bottom: 2px solid black;
   padding-bottom: 6px;
@@ -1015,6 +1017,7 @@ th {
   font-family: "Qonquer", sans-serif;
   font-size: 32px;
   font-weight: bold;
+  letter-spacing: 1.5px;
   color: black;
   border-bottom: 2px solid black;
   padding-bottom: 6px;
@@ -1071,6 +1074,7 @@ th {
   font-family: "Qonquer", sans-serif;
   font-size: 32px;
   font-weight: bold;
+  letter-spacing: 1.5px;
   color: black;
   border-bottom: 2px solid black;
   padding-bottom: 6px;

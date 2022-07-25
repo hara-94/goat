@@ -34,7 +34,7 @@
   }
 
   &__list {
-    width: 50%;
+    width: 56%;
     display: flex;
     justify-content: space-between;
 
@@ -95,6 +95,7 @@
     font-family: 'Qonquer';
     font-weight: bold;
     font-size: 22px;
+    letter-spacing: 1.5px;
 
     &:hover {
       &:after {
