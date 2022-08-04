@@ -1,0 +1,10 @@
+.main {
+  width: 100%;
+
+  &__inner {
+    overflow: visible;
+    max-width: 1000px;
+    width: calc(100% - 20px);
+    margin: 0 auto;
+  }
+}
