@@ -1,10 +1,10 @@
 .main {
   width: 100%;
+  background-color: black;
 
   &__inner {
     overflow: visible;
-    max-width: 1000px;
-    width: calc(100% - 20px);
     margin: 0 auto;
+    padding-top: 80px;
   }
 }
