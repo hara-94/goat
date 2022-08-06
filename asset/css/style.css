@@ -535,7 +535,7 @@ th {
 .game {
   width: 100%;
   padding-top: 200px;
-  padding-bottom: 40px;
+  padding-bottom: 240px;
 }
 .game__inner {
   width: 100%;
@@ -585,4 +585,54 @@ th {
   position: absolute;
   left: 0;
   bottom: -10px;
+}
+
+.access {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100px;
+}
+.access__inner {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.access__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 45vw;
+}
+.access__space {
+  position: relative;
+  width: 45vw;
+}
+.access__space:before {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-top: 60vw;
+}
+.access__content {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.access__heading {
+  color: white;
+  font-size: 28px;
+}
+.access__address {
+  margin-top: 45px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+.access__map {
+  margin-top: 45px;
+  width: 80%;
 }
