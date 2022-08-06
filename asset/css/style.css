@@ -636,3 +636,33 @@ th {
   margin-top: 45px;
   width: 80%;
 }
+
+.footer {
+  width: 100%;
+  background-color: black;
+  padding-bottom: 60px;
+}
+.footer__inner {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer__logo {
+  width: 20%;
+}
+.footer__logo__image {
+  width: 98px;
+}
+.footer__address {
+  width: 30%;
+  color: white;
+  font-size: 16px;
+}
+.footer__schedule {
+  width: 30%;
+  color: white;
+  font-size: 16px;
+}
