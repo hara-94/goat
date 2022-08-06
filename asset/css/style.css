@@ -476,3 +476,58 @@ th {
   right: 0;
   width: 60vw;
 }
+
+.drink {
+  width: 100%;
+  padding-top: 200px;
+  padding-bottom: 40px;
+}
+.drink__inner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.drink__image {
+  position: relative;
+  width: 100%;
+  height: 330px;
+  background-image: url("../image/dummy/background-alcohol.png");
+}
+.drink__image__mask {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.4;
+}
+.drink__image__heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+}
+.drink__text {
+  margin-top: 50px;
+  color: white;
+  font-size: 20px;
+}
+.drink__view-more {
+  margin-top: 30px;
+  position: relative;
+  font-size: 20px;
+  color: white;
+  width: 200px;
+}
+.drink__view-more__link {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.drink__view-more__arrow {
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+}
