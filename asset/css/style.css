@@ -419,6 +419,7 @@ th {
   background-color: black;
 }
 .main__inner {
+  position: relative;
   overflow: visible;
   margin: 0 auto;
   padding-top: 80px;
@@ -449,7 +450,7 @@ th {
 .concept__heading {
   margin-left: 40px;
   color: white;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: bold;
 }
 .concept__text {
@@ -458,7 +459,7 @@ th {
   margin-top: 40px;
   margin-left: 40px;
   color: white;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.6;
 }
 .concept__space {
@@ -506,16 +507,16 @@ th {
   left: 50%;
   transform: translate(-50%);
   color: white;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: bold;
 }
 .drink__text {
   margin-top: 50px;
   color: white;
-  font-size: 20px;
+  font-size: 16px;
 }
 .drink__view-more {
-  margin-top: 30px;
+  margin-top: 40px;
   position: relative;
   font-size: 20px;
   color: white;
@@ -525,6 +526,7 @@ th {
   display: block;
   width: 100%;
   text-align: center;
+  font-size: 16px;
 }
 .drink__view-more__arrow {
   position: absolute;
@@ -561,16 +563,16 @@ th {
   left: 50%;
   transform: translate(-50%);
   color: white;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: bold;
 }
 .game__text {
   margin-top: 50px;
   color: white;
-  font-size: 20px;
+  font-size: 16px;
 }
 .game__view-more {
-  margin-top: 30px;
+  margin-top: 40px;
   position: relative;
   font-size: 20px;
   color: white;
@@ -580,6 +582,7 @@ th {
   display: block;
   width: 100%;
   text-align: center;
+  font-size: 16px;
 }
 .game__view-more__arrow {
   position: absolute;
@@ -624,12 +627,13 @@ th {
 }
 .access__heading {
   color: white;
-  font-size: 28px;
+  font-size: 24px;
 }
 .access__address {
   margin-top: 45px;
   color: white;
-  font-size: 20px;
+  font-size: 16px;
+  line-height: 3;
   text-align: center;
 }
 .access__map {
@@ -665,4 +669,15 @@ th {
   width: 30%;
   color: white;
   font-size: 16px;
+}
+
+.border-element {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1000px;
+  border-left: 3px solid white;
 }
