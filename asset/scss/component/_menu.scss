@@ -17,6 +17,10 @@
     color: white;
     font-size: 28px;
     font-weight: bold;
+
+    @include isSp {
+      font-size: 20px;
+    }
   }
 
   &__tab {
@@ -37,8 +41,13 @@
       padding: 6px 10px;
       border-radius: 10px;
       color: white;
+      white-space: nowrap;
       font-size: 20px;
       cursor: pointer;
+
+      @include isSp {
+        font-size: 16px;
+      }
 
       &.js-selected {
         background-color: $selectedTabItem;
@@ -64,8 +73,18 @@
     margin-top: 24px;
     margin-left: 24px;
 
-    &:nth-of-type(3n+1) {
-      margin-left: 0;
+    @include isNotSp {
+      &:nth-of-type(3n+1) {
+        margin-left: 0;
+      }
+    }
+
+    @include isSp {
+      width: calc((100% - 24px) / 2);
+
+      &:nth-of-type(2n-1) {
+        margin-left: 0;
+      }
     }
 
     &__image {

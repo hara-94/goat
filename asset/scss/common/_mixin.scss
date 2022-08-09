@@ -17,3 +17,27 @@
     bottom: -10px;
   }
 }
+
+@mixin isPc {
+  @media screen and (max-width: 811px) {
+    @content;
+  }
+}
+
+@mixin isTablet {
+  @media screen and (max-width: 810px) {
+    @content;
+  }
+}
+
+@mixin isSp {
+  @media screen and (max-width: 520px) {
+    @content;
+  }
+}
+
+@mixin isNotSp {
+  @media screen and (min-width: 521px) {
+    @content;
+  }
+}

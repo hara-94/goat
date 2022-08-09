@@ -692,7 +692,7 @@ th {
 .menu__inner {
   position: relative;
   top: 60px;
-  width: calc(100% - 20px);
+  width: calc(100% - 40px);
   max-width: 1000px;
   margin: 0 auto;
   padding-top: 60px;
@@ -701,6 +701,11 @@ th {
   color: white;
   font-size: 28px;
   font-weight: bold;
+}
+@media screen and (max-width: 520px) {
+  .menu__heading {
+    font-size: 20px;
+  }
 }
 .menu__tab {
   margin-top: 40px;
@@ -718,8 +723,14 @@ th {
   padding: 6px 10px;
   border-radius: 10px;
   color: white;
+  white-space: nowrap;
   font-size: 20px;
   cursor: pointer;
+}
+@media screen and (max-width: 520px) {
+  .menu__tab__item {
+    font-size: 16px;
+  }
 }
 .menu__tab__item.js-selected {
   background-color: rgb(40, 40, 40);
@@ -740,8 +751,18 @@ th {
   margin-top: 24px;
   margin-left: 24px;
 }
-.menu__item:nth-of-type(3n+1) {
-  margin-left: 0;
+@media screen and (min-width: 521px) {
+  .menu__item:nth-of-type(3n+1) {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 520px) {
+  .menu__item {
+    width: calc((100% - 24px) / 2);
+  }
+  .menu__item:nth-of-type(2n-1) {
+    margin-left: 0;
+  }
 }
 .menu__item__image {
   width: 100%;
