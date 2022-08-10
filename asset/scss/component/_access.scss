@@ -4,7 +4,7 @@
   padding-bottom: 100px;
 
   &__inner {
-    width: 100%;
+    width: $sectionWidth;
     max-width: $sectionMaxWidth;
     margin: 0 auto;
     display: flex;
@@ -15,13 +15,53 @@
   &__image {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 40vw;
+    left: 40px;
+    width: 36vw;
+
+    @include isTablet {
+      display: none;
+    }
+
+    &--tablet {
+      position: relative;
+      margin-top: 30px;
+      display: none;
+
+      @include isTablet {
+        display: block;
+      }
+
+      &__image {
+        width: 100%;
+      }
+
+      &__mask {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.5;
+      }
+
+      &__text {
+        position: absolute;
+        bottom: 8px;
+        right: 24px;
+        color: white;
+        z-index: 1;
+      }
+
+      &__icon {
+        width: 12px;
+        height: 12px;
+      }
+    }
   }
 
   &__space {
     position: relative;
-    width: 40vw;
+    width: 36vw;
 
     &:before {
       content: "";
@@ -29,12 +69,22 @@
       width: 100%;
       padding-top: 60vw;
     }
+
+    @include isTablet {
+      display: none;
+    }
   }
 
   &__content {
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-width: 430px;
+    width: 430px;
+
+    @include isTablet {
+      width: 100%;
+    }
   }
 
   &__heading {
@@ -48,10 +98,18 @@
     font-size: 16px;
     line-height: 3;
     text-align: center;
+
+    @include isTablet {
+      line-height: 2;
+    }
   }
 
   &__map {
     margin-top: 45px;
     width: 100%;
+
+    @include isTablet {
+      display: none;
+    }
   }
 }
