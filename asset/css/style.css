@@ -541,6 +541,11 @@ th {
   flex-direction: column;
   align-items: center;
 }
+@media screen and (max-width: 520px) {
+  .drink__inner {
+    position: relative;
+  }
+}
 .drink__image {
   position: relative;
   width: 100%;
@@ -570,6 +575,11 @@ th {
   text-align: center;
   line-height: 2;
 }
+@media screen and (max-width: 520px) {
+  .drink__text {
+    display: none;
+  }
+}
 .drink__view-more {
   margin-top: 40px;
   position: relative;
@@ -588,17 +598,39 @@ th {
   left: 0;
   bottom: -10px;
 }
+@media screen and (max-width: 520px) {
+  .drink__view-more__arrow {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 520px) {
+  .drink__view-more {
+    position: absolute;
+    bottom: 20px;
+    right: 16px;
+  }
+}
 
 .game {
   width: 100%;
   padding-top: 200px;
   padding-bottom: 240px;
 }
+@media screen and (max-width: 520px) {
+  .game {
+    padding-top: 160px;
+  }
+}
 .game__inner {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media screen and (max-width: 520px) {
+  .game__inner {
+    position: relative;
+  }
 }
 .game__image {
   position: relative;
@@ -629,6 +661,11 @@ th {
   text-align: center;
   line-height: 2;
 }
+@media screen and (max-width: 520px) {
+  .game__text {
+    display: none;
+  }
+}
 .game__view-more {
   margin-top: 40px;
   position: relative;
@@ -646,6 +683,18 @@ th {
   position: absolute;
   left: 0;
   bottom: -10px;
+}
+@media screen and (max-width: 520px) {
+  .game__view-more__arrow {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 520px) {
+  .game__view-more {
+    position: absolute;
+    bottom: 20px;
+    right: 16px;
+  }
 }
 
 .access {
