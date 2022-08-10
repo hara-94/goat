@@ -84,6 +84,7 @@
 
     @include isTablet {
       width: 100%;
+      min-width: auto;
     }
   }
 

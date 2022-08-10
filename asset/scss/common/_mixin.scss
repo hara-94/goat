@@ -22,6 +22,12 @@
   }
 }
 
+@mixin max-width($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
 @mixin isPc {
   @media screen and (max-width: 811px) {
     @content;
