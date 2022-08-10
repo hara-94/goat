@@ -133,7 +133,7 @@
               各線[船橋駅]徒歩5分
             </div>
             <img src="./asset/image/map.jpg" alt="" class="access__map">
-            <div class="access__image--tablet">
+            <div id="js-access-map" class="access__image--tablet">
               <img src="./asset/image/building-tablet.jpg" alt="建物" class="access__image--tablet__image">
               <div class="access__image--tablet__mask"></div>
               <p class="access__image--tablet__text">
@@ -143,8 +143,13 @@
             </div>
           </div>
         </div>
+        <div id="js-access-tablet-map" class="access__tablet-map">
+          <div class="access__tablet-map__inner">
+            <divj id="js-access-tablet-map-overlay" class="access__tablet-map__mask"></divj>
+            <img src="./asset/image/map.jpg" alt="地図" class="access__tablet-map__map">
+          </div>
+        </div>
       </div>
-      <!-- <div class="border-element"></div> -->
     </div>
   </div>
   <footer class="footer">
@@ -175,5 +180,6 @@
   </footer>
   <script src="./asset/script/index.js"></script>
   <script src="./asset/script/hamburger.js"></script>
+  <script src="./asset/script/map.js"></script>
 </body>
 </html>
