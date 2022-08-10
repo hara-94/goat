@@ -1,19 +1,14 @@
-@import "source/variables.scss";
-@import "source/mixin.scss";
-@import "source/animation.scss";
+@import "./common/reset";
+@import "./common/variable";
+@import "./common/mixin";
 
-@import "source/reset.scss";
-
-@import "source/component/header.scss";
-@import "source/component/footer.scss";
-@import "source/component/full-swiper.scss";
-@import "source/component/hamburger.scss";
-@import "source/component/section.scss";
-@import "source/component/horizontal-card.scss";
-@import "source/component/main.scss";
-
-@import "source/pages/index.scss";
-@import "source/pages/game.scss";
-@import "source/pages/drink.scss";
-
-@import "source/js/animation.scss";
+@import "./component/header";
+@import "./component/main";
+@import "./component/main-visual";
+@import "./component/concept";
+@import "./component/drink";
+@import "./component/game";
+@import "./component/access";
+@import "./component/footer";
+@import "./component/border";
+@import "./component/menu";

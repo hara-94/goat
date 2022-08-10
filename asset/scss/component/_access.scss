@@ -1,0 +1,58 @@
+.access {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100px;
+
+  &__inner {
+    width: 100%;
+    max-width: $sectionMaxWidth;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45vw;
+  }
+
+  &__space {
+    position: relative;
+    width: 45vw;
+
+    &:before {
+      content: "";
+      display: block;
+      width: 100%;
+      padding-top: 60vw;
+    }
+  }
+
+  &__content {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__heading {
+    color: white;
+    font-size: 24px;
+  }
+
+  &__address {
+    margin-top: 45px;
+    color: white;
+    font-size: 16px;
+    line-height: 3;
+    text-align: center;
+  }
+
+  &__map {
+    margin-top: 45px;
+    width: 80%;
+  }
+}

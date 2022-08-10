@@ -1,0 +1,11 @@
+.main {
+  width: 100%;
+  background-color: black;
+
+  &__inner {
+    position: relative;
+    overflow: visible;
+    margin: 0 auto;
+    padding-top: 80px;
+  }
+}

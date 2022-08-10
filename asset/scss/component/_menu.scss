@@ -1,0 +1,106 @@
+.menu {
+  width: 100%;
+  min-height: calc(var(--vh, 1vh) * 100);
+  background-color: black;
+  padding-bottom: 60px;
+
+  &__inner {
+    position: relative;
+    top: 60px;
+    width: $sectionWidth;
+    max-width: $sectionMaxWidth;
+    margin: 0 auto;
+    padding-top: 60px;
+  }
+
+  &__heading {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+
+    @include isSp {
+      font-size: 20px;
+    }
+  }
+
+  &__tab {
+    margin-top: 40px;
+    display: flex;
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    & > * + * {
+      margin-left: 16px;
+    }
+
+    &__item {
+      background-color: black;
+      padding: 6px 10px;
+      border-radius: 10px;
+      color: white;
+      white-space: nowrap;
+      font-size: 20px;
+      cursor: pointer;
+
+      @include isSp {
+        font-size: 16px;
+      }
+
+      &.js-selected {
+        background-color: $selectedTabItem;
+      }
+    }
+  }
+
+  &__content {
+    width: 100%;
+    display: none;
+    flex-wrap: wrap;
+
+    &.show {
+      display: flex;
+    }
+  }
+
+  &__item {
+    width: calc((100% - 48px) / 3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 24px;
+    margin-left: 24px;
+
+    @include isNotSp {
+      &:nth-of-type(3n+1) {
+        margin-left: 0;
+      }
+    }
+
+    @include isSp {
+      width: calc((100% - 24px) / 2);
+
+      &:nth-of-type(2n-1) {
+        margin-left: 0;
+      }
+    }
+
+    &__image {
+      width: 100%;
+    }
+
+    &__name {
+      margin-top: 8px;
+      font-size: 14px;
+      color: white;
+    }
+
+    &__price {
+      margin-top: 8px;
+      font-size: 14px;
+      color: white;
+    }      
+  }
+}
