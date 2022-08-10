@@ -3,11 +3,19 @@
   padding-top: 200px;
   padding-bottom: 240px;
 
+  @include isSp {
+    padding-top: 160px;
+  }
+
   &__inner {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include isSp {
+      position: relative;
+    }
   }
 
   &__image {
@@ -35,13 +43,26 @@
   }
 
   &__text {
+    width: $sectionWidth;
     margin-top: 50px;
     color: white;
     font-size: 16px;
+    text-align: center;
+    line-height: 2;
+
+    @include isSp {
+      display: none;
+    }
   }
 
   &__view-more {
     margin-top: 40px;
     @include view-more;
+
+    @include isSp {
+      position: absolute;
+      bottom: 20px;
+      right: 16px;
+    }
   }
 }

@@ -3,13 +3,18 @@
   width: 100%;
 
   &__inner {
-    width: 100%;
+    width: $sectionWidth;
     margin: 0 auto;
     max-width: $sectionMaxWidth;
+
+    @include isTablet {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__heading {
-    margin-left: 40px;
     color: white;
     font-size: 24px;
     font-weight: bold;
@@ -19,7 +24,6 @@
     width: 100%;
     max-width: 590px;
     margin-top: 40px;
-    margin-left: 40px;
     color: white;
     font-size: 16px;
     line-height: 1.6;
@@ -27,12 +31,17 @@
 
   &__space {
     width: 60vw;
+    min-width: 600px;
     position: relative;
 
     &:before {
       content: "";
       display: block;
       padding-top: 70%;
+    }
+
+    @include isTablet {
+      display: none;
     }
   }
 
@@ -41,5 +50,13 @@
     bottom: 0;
     right: 0;
     width: 60vw;
+    min-width: 600px;
+
+    @include isTablet {
+      position: static;
+      margin-top: 30px;
+      width: 100%;
+      min-width: auto;
+    }
   }
 }
