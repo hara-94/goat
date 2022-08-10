@@ -1,7 +1,9 @@
 .footer {
   width: 100%;
   background-color: black;
+  border-top: 2px solid white;
   padding-bottom: 60px;
+  padding-top: 60px;
 
   &__inner {
     width: 100%;
