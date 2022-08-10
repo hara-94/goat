@@ -1,4 +1,4 @@
-window.onload = () => {
+export function controlMenu() {
   const menuSoftdrink = document.getElementById("menu-softdrink");
   const menuAlcohol = document.getElementById("menu-alcohol");
   const menuChampagne = document.getElementById("menu-champagne");
@@ -24,20 +24,20 @@ window.onload = () => {
     target.classList.add("show");
   }
   
-  menuSoftdrink.addEventListener("click", (e) => {
+  menuSoftdrink?.addEventListener("click", (e) => {
     switchTab(e.target);
     switchContent(contentSoftdrink);
   });
   
-  menuAlcohol.addEventListener("click", (e) => {
+  menuAlcohol?.addEventListener("click", (e) => {
     switchTab(e.target);
     switchContent(contentAlcohol);
   });
-  menuChampagne.addEventListener("click", (e) => {
+  menuChampagne?.addEventListener("click", (e) => {
     switchTab(e.target);
     switchContent(contentChampagne);
   });
-  menuFood.addEventListener("click", (e) => {
+  menuFood?.addEventListener("click", (e) => {
     switchTab(e.target);
     switchContent(contentFood);
   });

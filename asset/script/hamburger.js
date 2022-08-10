@@ -1,4 +1,4 @@
-window.onload = () => {
+export function controlHamburger() {
   const html = document.querySelector("html");
 
   const hamburger = document.getElementById("js-hamburger");
