@@ -608,11 +608,11 @@ th {
   position: absolute;
   top: 0;
   left: 0;
-  width: 45vw;
+  width: 40vw;
 }
 .access__space {
   position: relative;
-  width: 45vw;
+  width: 40vw;
 }
 .access__space:before {
   content: "";
@@ -621,7 +621,6 @@ th {
   padding-top: 60vw;
 }
 .access__content {
-  width: 45%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -639,7 +638,7 @@ th {
 }
 .access__map {
   margin-top: 45px;
-  width: 80%;
+  width: 100%;
 }
 
 .footer {
