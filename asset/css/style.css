@@ -383,6 +383,7 @@ th {
 
 /* size */
 /* color */
+/* font */
 .header {
   width: 100%;
   height: 60px;
@@ -468,6 +469,38 @@ th {
   height: 100%;
   background-color: black;
   opacity: 0.4;
+}
+
+.catchphrase {
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 200px;
+}
+@media screen and (max-width: 520px) {
+  .catchphrase {
+    padding-bottom: 120px;
+  }
+}
+.catchphrase__inner {
+  max-width: 1000px;
+  width: calc(100% - 40px);
+  margin: 0 auto;
+}
+.catchphrase__text {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Homemade Apple", cursive;
+}
+@media screen and (max-width: 650px) {
+  .catchphrase__text {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .catchphrase__text {
+    font-size: 24px;
+  }
 }
 
 .concept {
