@@ -1,0 +1,30 @@
+.catchphrase {
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 200px;
+
+  @include isSp {
+    padding-bottom: 120px;
+  }
+
+  &__inner {
+    max-width: $sectionMaxWidth;
+    width: $sectionWidth;
+    margin: 0 auto;
+  }
+
+  &__text {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-family: $homemadeApple;
+
+    @include max-width(650px) {
+      font-size: 30px;
+    }
+
+    @include isSp {
+      font-size: 24px;
+    }
+  }
+}
