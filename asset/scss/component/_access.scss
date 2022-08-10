@@ -113,4 +113,41 @@
       display: none;
     }
   }
+
+  &__tablet-map {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(var(--vh, 1vh) * 100);
+    z-index: 1000;
+
+    &.show {
+      display: block;
+    }
+
+    &__inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__mask {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      opacity: 0.8;
+    }
+
+    &__map {
+      width: 90%;
+      position: relative;
+
+    }
+  }
 }
