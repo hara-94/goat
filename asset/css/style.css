@@ -563,9 +563,12 @@ th {
   font-weight: bold;
 }
 .drink__text {
+  width: calc(100% - 40px);
   margin-top: 50px;
   color: white;
   font-size: 16px;
+  text-align: center;
+  line-height: 2;
 }
 .drink__view-more {
   margin-top: 40px;
@@ -619,9 +622,12 @@ th {
   font-weight: bold;
 }
 .game__text {
+  width: calc(100% - 40px);
   margin-top: 50px;
   color: white;
   font-size: 16px;
+  text-align: center;
+  line-height: 2;
 }
 .game__view-more {
   margin-top: 40px;
