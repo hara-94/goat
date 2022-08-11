@@ -99,6 +99,7 @@
     font-size: 16px;
     line-height: 3;
     text-align: center;
+    font-weight: 300;
 
     @include isTablet {
       line-height: 2;
@@ -147,7 +148,6 @@
     &__map {
       width: 90%;
       position: relative;
-
     }
   }
 }

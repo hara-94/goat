@@ -41,6 +41,7 @@
     color: white;
     font-size: 16px;
     line-height: 1.5;
+    font-weight: 300;
 
     @include max-width(650px) {
       width: 100%;
@@ -53,6 +54,7 @@
     color: white;
     font-size: 16px;
     line-height: 1.5;
+    font-weight: 300;
 
     @include max-width(650px) {
       width: 100%;

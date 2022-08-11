@@ -534,6 +534,7 @@ body {
   margin-top: 40px;
   color: white;
   font-size: 16px;
+  font-weight: 300;
   line-height: 1.6;
 }
 .concept__space {
@@ -611,6 +612,7 @@ body {
   font-size: 16px;
   text-align: center;
   line-height: 2;
+  font-weight: 300;
 }
 @media screen and (max-width: 520px) {
   .drink__text {
@@ -621,6 +623,7 @@ body {
   margin-top: 40px;
   position: relative;
   font-size: 20px;
+  font-weight: 300;
   color: white;
   width: 200px;
 }
@@ -697,6 +700,7 @@ body {
   font-size: 16px;
   text-align: center;
   line-height: 2;
+  font-weight: 300;
 }
 @media screen and (max-width: 520px) {
   .game__text {
@@ -707,6 +711,7 @@ body {
   margin-top: 40px;
   position: relative;
   font-size: 20px;
+  font-weight: 300;
   color: white;
   width: 200px;
 }
@@ -828,6 +833,7 @@ body {
   font-size: 16px;
   line-height: 3;
   text-align: center;
+  font-weight: 300;
 }
 @media screen and (max-width: 810px) {
   .access__address {
@@ -916,6 +922,7 @@ body {
   color: white;
   font-size: 16px;
   line-height: 1.5;
+  font-weight: 300;
 }
 @media screen and (max-width: 650px) {
   .footer__address {
@@ -928,6 +935,7 @@ body {
   color: white;
   font-size: 16px;
   line-height: 1.5;
+  font-weight: 300;
 }
 @media screen and (max-width: 650px) {
   .footer__schedule {
