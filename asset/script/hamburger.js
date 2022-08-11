@@ -14,7 +14,7 @@ export function controlHamburger() {
 
   let scrollY = 0;
 
-  openButton.addEventListener("click", () => {
+  openButton?.addEventListener("click", () => {
     scrollY = window.scrollY;
     html.classList.add("fixed");
     hamburger.classList.add("open");
@@ -27,7 +27,7 @@ export function controlHamburger() {
     });
   });
 
-  closeButton.addEventListener("click", () => {
+  closeButton?.addEventListener("click", () => {
     html.classList.remove("fixed");
     window.scrollTo({ top: scrollY });
     hamburger.classList.add("close");
