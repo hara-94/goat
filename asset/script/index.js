@@ -1,3 +1,4 @@
+import { controlNavigationLink } from "./navigaton.js";
 import { controlHamburger } from "./hamburger.js";
 import { controlMenu } from "./menu.js";
 import { controlTabletMap } from "./map.js";
@@ -14,6 +15,7 @@ window.addEventListener('resize', setFillHeight);
 setFillHeight();
 
 window.onload = () => {
+  controlNavigationLink();
   controlHamburger();
   controlMenu();
   controlTabletMap();
