@@ -43,6 +43,7 @@
       color: white;
       white-space: nowrap;
       font-size: 20px;
+      font-weight: 300;
       cursor: pointer;
 
       @include isSp {
@@ -95,12 +96,14 @@
       margin-top: 8px;
       font-size: 14px;
       color: white;
+      font-weight: 300;
     }
 
     &__price {
       margin-top: 8px;
       font-size: 14px;
       color: white;
+      font-weight: 300;
     }      
   }
 }
