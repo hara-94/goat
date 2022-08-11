@@ -1052,6 +1052,27 @@ body {
 .menu__item__image {
   width: 100%;
 }
+.menu__item__soon {
+  position: relative;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu__item__soon__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.menu__item__soon:before {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-top: 100%;
+  background-color: rgb(40, 40, 40);
+}
 .menu__item__name {
   margin-top: 8px;
   font-size: 14px;

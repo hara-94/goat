@@ -7,10 +7,10 @@ export function controlMenu() {
   const contentSoftdrink = document.getElementById("content-softdrink");
   const contentAlcohol = document.getElementById("content-alcohol");
   const contentChampagne = document.getElementById("content-champagne");
-  // const contentFood = document.getElementById("content-food");
+  const contentFood = document.getElementById("content-food");
   
   const tabs = [menuSoftdrink, menuAlcohol, menuChampagne, menuFood];
-  const contents = [contentSoftdrink, contentAlcohol, contentChampagne];
+  const contents = [contentSoftdrink, contentAlcohol, contentChampagne, contentFood];
 
   function switchTab(target) {
     tabs.forEach((tab) => { tab.classList.remove("js-selected") });
@@ -18,9 +18,7 @@ export function controlMenu() {
   }
 
   function switchContent(target) {
-    console.log(contents)
     contents.forEach((content) => { content.classList.remove("show") });
-    console.log(target)
     target.classList.add("show");
   }
   
