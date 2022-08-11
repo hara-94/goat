@@ -13,21 +13,49 @@
 <body>
   <header class="header">
     <div class="header__inner">
-      <img src="asset/image/logo.png" alt="ロゴ画像" class="header__logo">
+      <a href="/" class="header__logo">
+        <img src="asset/image/logo.png" alt="ロゴ画像" class="header__logo__image">
+      </a>
       <ul class="header__menu">
-        <li class="header__menu__item">
+        <li id="js-concept-link" class="header__menu__item">
           <a href="">CONCEPT</a>
         </li>
         <li class="header__menu__item">
-          <a href="">DRINK</a>
+          <a href="./menu">DRINK</a>
         </li>
-        <li class="header__menu__item">
-          <a href="">GAME</a>
-        </li>
-        <li class="header__menu__item">
+        <!-- <li class="header__menu__item">
+          <a href="/game">GAME</a>
+        </li> -->
+        <li id="js-access-link" class="header__menu__item">
           <a href="">ACCESS</a>
         </li>
       </ul>
+      <div id="js-hamburger-open" class="header__menu--sp">
+        <div class="header__menu--sp__bar"></div>
+        <div class="header__menu--sp__bar"></div>
+        <div class="header__menu--sp__bar"></div>
+      </div>
+    </div>
+    <div id="js-hamburger" class="hamburger">
+      <div class="hamburger__inner">
+        <div class="hamburger__heading">
+          <img id="js-hamburger-close" src="./asset/image/close.png" alt="" class="hamburger__heading__close">
+        </div>
+        <ul class="hamburger__list">
+          <li class="hamburger__list__item">
+            <a id="js-hamburger-concept" class="hamburger__list__item__link" href="">CONCEPT</a>
+          </li>
+          <li class="hamburger__list__item">
+            <a id="js-hamburger-drink" class="hamburger__list__item__link" href="./menu">DRINK</a>
+          </li>
+          <!-- <li class="hamburger__list__item">
+            <a id="js-hamburger-game" class="hamburger__list__item__link" href="">GAME</a>
+          </li> -->
+          <li class="hamburger__list__item">
+            <a id="js-hamburger-access" class="hamburger__list__item__link" href="">ACCESS</a>
+          </li>                              
+        </ul>
+      </div>
     </div>
   </header>
   <div class="menu">

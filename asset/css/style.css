@@ -407,6 +407,9 @@ body {
 .header__logo {
   width: 98px;
 }
+.header__logo__image {
+  width: 100%;
+}
 .header__menu {
   display: flex;
   justify-content: flex-end;
