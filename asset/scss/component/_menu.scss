@@ -5,12 +5,11 @@
   padding-bottom: 60px;
 
   &__inner {
-    position: relative;
-    top: 60px;
     width: $sectionWidth;
     max-width: $sectionMaxWidth;
     margin: 0 auto;
-    padding-top: 60px;
+    padding-top: 120px;
+    padding-bottom: 60px;
   }
 
   &__heading {
