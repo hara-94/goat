@@ -1,3 +1,6 @@
+/* size */
+/* color */
+/* font */
 /*! destyle.css v3.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model and set borders */
 /* ============================================ */
@@ -381,9 +384,10 @@ th {
   font-weight: bold;
 }
 
-/* size */
-/* color */
-/* font */
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
 .header {
   width: 100%;
   height: 60px;
@@ -459,12 +463,24 @@ th {
 }
 
 .main-visual {
+  position: relative;
+  overflow: hidden;
   width: 100%;
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
-  background-image: url("../image/dummy/background-lg.jpg");
+}
+.main-visual__video {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
 }
 .main-visual__mask {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background-color: black;
@@ -530,6 +546,7 @@ th {
   margin-top: 40px;
   color: white;
   font-size: 16px;
+  font-weight: 300;
   line-height: 1.6;
 }
 .concept__space {
@@ -566,7 +583,7 @@ th {
 .drink {
   width: 100%;
   padding-top: 200px;
-  padding-bottom: 40px;
+  padding-bottom: 200px;
 }
 .drink__inner {
   width: 100%;
@@ -583,7 +600,7 @@ th {
   position: relative;
   width: 100%;
   height: 330px;
-  background-image: url("../image/dummy/background-alcohol.png");
+  background-image: url("../image/drink-bg.jpg");
 }
 .drink__image__mask {
   width: 100%;
@@ -607,6 +624,7 @@ th {
   font-size: 16px;
   text-align: center;
   line-height: 2;
+  font-weight: 300;
 }
 @media screen and (max-width: 520px) {
   .drink__text {
@@ -617,6 +635,7 @@ th {
   margin-top: 40px;
   position: relative;
   font-size: 20px;
+  font-weight: 300;
   color: white;
   width: 200px;
 }
@@ -669,7 +688,7 @@ th {
   position: relative;
   width: 100%;
   height: 330px;
-  background-image: url("../image/dummy/game-bg.png");
+  background-image: url("../image/poker-bg.jpg");
 }
 .game__image__mask {
   width: 100%;
@@ -693,6 +712,7 @@ th {
   font-size: 16px;
   text-align: center;
   line-height: 2;
+  font-weight: 300;
 }
 @media screen and (max-width: 520px) {
   .game__text {
@@ -703,6 +723,7 @@ th {
   margin-top: 40px;
   position: relative;
   font-size: 20px;
+  font-weight: 300;
   color: white;
   width: 200px;
 }
@@ -824,6 +845,7 @@ th {
   font-size: 16px;
   line-height: 3;
   text-align: center;
+  font-weight: 300;
 }
 @media screen and (max-width: 810px) {
   .access__address {
@@ -912,6 +934,7 @@ th {
   color: white;
   font-size: 16px;
   line-height: 1.5;
+  font-weight: 300;
 }
 @media screen and (max-width: 650px) {
   .footer__address {
@@ -924,6 +947,7 @@ th {
   color: white;
   font-size: 16px;
   line-height: 1.5;
+  font-weight: 300;
 }
 @media screen and (max-width: 650px) {
   .footer__schedule {
@@ -985,6 +1009,7 @@ th {
   color: white;
   white-space: nowrap;
   font-size: 20px;
+  font-weight: 300;
   cursor: pointer;
 }
 @media screen and (max-width: 520px) {
@@ -1031,11 +1056,13 @@ th {
   margin-top: 8px;
   font-size: 14px;
   color: white;
+  font-weight: 300;
 }
 .menu__item__price {
   margin-top: 8px;
   font-size: 14px;
   color: white;
+  font-weight: 300;
 }
 
 html.fixed {
