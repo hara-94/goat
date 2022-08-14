@@ -634,6 +634,13 @@ body {
   height: 330px;
   background-image: url("../image/drink-bg.jpg");
 }
+@media screen and (max-width: 520px) {
+  .drink__image {
+    height: 250px;
+    background-image: url("../image/drink-bg-sp.jpg");
+    background-position: center;
+  }
+}
 .drink__image__mask {
   width: 100%;
   height: 100%;
