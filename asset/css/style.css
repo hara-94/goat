@@ -447,7 +447,7 @@ body {
 .header__menu--sp {
   display: none;
   position: relative;
-  width: 46px;
+  width: 40px;
   height: 36px;
 }
 @media screen and (max-width: 810px) {
