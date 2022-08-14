@@ -427,10 +427,27 @@ body {
   font-size: 16px;
   font-weight: bold;
 }
+.header__menu__item__link {
+  position: relative;
+}
+.header__menu__item__link:hover:before {
+  width: 100%;
+}
+.header__menu__item__link:before {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: all 0.4s;
+}
 .header__menu--sp {
   display: none;
   position: relative;
-  width: 46px;
+  width: 40px;
   height: 36px;
 }
 @media screen and (max-width: 810px) {
@@ -455,8 +472,10 @@ body {
 }
 
 .main {
+  position: relative;
   width: 100%;
   background-color: black;
+  z-index: 100;
 }
 .main__inner {
   position: relative;
@@ -466,11 +485,21 @@ body {
 }
 
 .main-visual {
-  position: relative;
+  position: fixed;
   overflow: hidden;
   width: 100%;
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
+}
+.main-visual__space {
+  width: 100%;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+}
+.main-visual__inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 .main-visual__video {
   min-width: 100%;
@@ -604,6 +633,13 @@ body {
   width: 100%;
   height: 330px;
   background-image: url("../image/drink-bg.jpg");
+}
+@media screen and (max-width: 520px) {
+  .drink__image {
+    height: 250px;
+    background-image: url("../image/drink-bg-sp.jpg");
+    background-position: center;
+  }
 }
 .drink__image__mask {
   width: 100%;
@@ -903,6 +939,7 @@ body {
 }
 
 .footer {
+  position: relative;
   width: 100%;
   background-color: black;
   border-top: 2px solid white;

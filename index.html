@@ -19,16 +19,16 @@
       </a>
       <ul class="header__menu">
         <li id="js-concept-link" class="header__menu__item">
-          <a href="">CONCEPT</a>
+          <a class="header__menu__item__link" href="">CONCEPT</a>
         </li>
         <li class="header__menu__item">
-          <a href="./menu">DRINK</a>
+          <a class="header__menu__item__link" href="./menu">DRINK</a>
         </li>
         <!-- <li class="header__menu__item">
           <a href="/game">GAME</a>
         </li> -->
         <li id="js-access-link" class="header__menu__item">
-          <a href="">ACCESS</a>
+          <a class="header__menu__item__link" href="">ACCESS</a>
         </li>
       </ul>
       <div id="js-hamburger-open" class="header__menu--sp">
@@ -60,11 +60,14 @@
     </div>
   </header>
   <div class="main-visual">
-    <video class="main-visual__video"  autoplay loop muted playsinline>
-      <source src="./asset/video/main-movie.mp4">
-    </video>
-    <div class="main-visual__mask"></div>
+    <div class="main-visual__inner">
+      <video class="main-visual__video"  autoplay loop muted playsinline>
+        <source src="./asset/video/main-movie.mp4">
+      </video>
+      <div class="main-visual__mask"></div>
+    </div>
   </div>
+  <div class="main-visual__space"></div>
   <div class="main">
     <div class="main__inner">
       <div class="catchphrase">

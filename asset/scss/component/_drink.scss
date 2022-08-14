@@ -20,6 +20,12 @@
     height: 330px;
     background-image: url("../image/drink-bg.jpg");
 
+    @include isSp {
+      height: 250px;
+      background-image: url("../image/drink-bg-sp.jpg");
+      background-position: center;
+    }
+
     &__mask {
       width: 100%;
       height: 100%;
