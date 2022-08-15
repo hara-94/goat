@@ -487,7 +487,7 @@ body {
     transform: rotate(0deg);
     background-color: white;
   }
-  30% {
+  70% {
     background-color: white;
   }
   100% {
@@ -502,7 +502,7 @@ body {
     transform: rotate(0deg);
     background-color: white;
   }
-  30% {
+  70% {
     background-color: white;
   }
   100% {
@@ -517,8 +517,8 @@ body {
     transform: rotate(585deg);
     background-color: black;
   }
-  70% {
-    background-color: black;
+  30% {
+    background-color: white;
   }
   100% {
     top: 34px;
@@ -532,8 +532,8 @@ body {
     transform: rotate(585deg);
     background-color: black;
   }
-  70% {
-    background-color: black;
+  30% {
+    background-color: white;
   }
   100% {
     top: 34px;
@@ -1413,7 +1413,7 @@ html.fixed {
   cursor: pointer;
 }
 .hamburger__list {
-  margin-top: 40px;
+  margin-top: 80px;
 }
 .hamburger__list > * + * {
   margin-top: 30px;
@@ -1428,6 +1428,7 @@ html.fixed {
   left: 0;
   right: 0;
   display: block;
-  padding: 4px;
+  padding: 10px 4px;
   border-bottom: 2px solid black;
+  font-weight: 300;
 }

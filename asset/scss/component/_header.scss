@@ -54,7 +54,7 @@
     transform: rotate(0deg);
     background-color: white;
   }
-  30% {
+  70% {
     background-color: white;
   }
   100% {
@@ -70,8 +70,8 @@
     transform: rotate(585deg);
     background-color: black;
   }
-  70% {
-    background-color: black;
+  30% {
+    background-color: white;
   }
   100% {
     top: 34px;
