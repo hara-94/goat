@@ -8,7 +8,7 @@
     background-color: white;
   }
   100% {
-    top: 17px;
+    top: 15px;
     transform: rotate(-585deg);
     background-color: black;
   }
@@ -16,7 +16,7 @@
 
 @keyframes hide-top-bar {
   0% {
-    top: 17px;
+    top: 15px;
     transform: rotate(-585deg);
     background-color: black;
   }
@@ -50,7 +50,7 @@
 
 @keyframes show-bottom-bar {
   0% {
-    top: 34px;
+    top: 28px;
     transform: rotate(0deg);
     background-color: white;
   }
@@ -58,7 +58,7 @@
     background-color: white;
   }
   100% {
-    top: 17px;
+    top: 15px;
     transform: rotate(585deg);
     background-color: black;
   }
@@ -66,7 +66,7 @@
 
 @keyframes hide-bottom-bar {
   0% {
-    top: 17px;
+    top: 15px;
     transform: rotate(585deg);
     background-color: black;
   }
@@ -74,7 +74,7 @@
     background-color: white;
   }
   100% {
-    top: 34px;
+    top: 28px;
     transform: rotate(0deg);
     background-color: white;
   }
@@ -149,8 +149,8 @@
   &__menu--sp {
     display: none;
     position: relative;
-    width: 36px;
-    height: 36px;
+    width: 30px;
+    height: 30px;
     z-index: 100;
 
     @include isTablet {
@@ -180,7 +180,7 @@
       }
 
       &:nth-of-type(2) {
-        top: 17px;
+        top: 14px;
 
         &.show {
           animation-name: show-middle-bar;
@@ -196,7 +196,7 @@
       }
 
       &:nth-of-type(3) {
-        top: 34px;
+        top: 28px;
 
         &.show {
           animation-name: show-bottom-bar;

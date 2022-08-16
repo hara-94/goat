@@ -398,7 +398,7 @@ body {
     background-color: white;
   }
   100% {
-    top: 17px;
+    top: 15px;
     transform: rotate(-585deg);
     background-color: black;
   }
@@ -414,14 +414,14 @@ body {
     background-color: white;
   }
   100% {
-    top: 17px;
+    top: 15px;
     transform: rotate(-585deg);
     background-color: black;
   }
 }
 @-webkit-keyframes hide-top-bar {
   0% {
-    top: 17px;
+    top: 15px;
     transform: rotate(-585deg);
     background-color: black;
   }
@@ -436,7 +436,7 @@ body {
 }
 @keyframes hide-top-bar {
   0% {
-    top: 17px;
+    top: 15px;
     transform: rotate(-585deg);
     background-color: black;
   }
@@ -483,7 +483,7 @@ body {
 }
 @-webkit-keyframes show-bottom-bar {
   0% {
-    top: 34px;
+    top: 28px;
     transform: rotate(0deg);
     background-color: white;
   }
@@ -491,14 +491,14 @@ body {
     background-color: white;
   }
   100% {
-    top: 17px;
+    top: 15px;
     transform: rotate(585deg);
     background-color: black;
   }
 }
 @keyframes show-bottom-bar {
   0% {
-    top: 34px;
+    top: 28px;
     transform: rotate(0deg);
     background-color: white;
   }
@@ -506,14 +506,14 @@ body {
     background-color: white;
   }
   100% {
-    top: 17px;
+    top: 15px;
     transform: rotate(585deg);
     background-color: black;
   }
 }
 @-webkit-keyframes hide-bottom-bar {
   0% {
-    top: 17px;
+    top: 15px;
     transform: rotate(585deg);
     background-color: black;
   }
@@ -521,14 +521,14 @@ body {
     background-color: white;
   }
   100% {
-    top: 34px;
+    top: 28px;
     transform: rotate(0deg);
     background-color: white;
   }
 }
 @keyframes hide-bottom-bar {
   0% {
-    top: 17px;
+    top: 15px;
     transform: rotate(585deg);
     background-color: black;
   }
@@ -536,7 +536,7 @@ body {
     background-color: white;
   }
   100% {
-    top: 34px;
+    top: 28px;
     transform: rotate(0deg);
     background-color: white;
   }
@@ -600,8 +600,8 @@ body {
 .header__menu--sp {
   display: none;
   position: relative;
-  width: 36px;
-  height: 36px;
+  width: 30px;
+  height: 30px;
   z-index: 100;
 }
 @media screen and (max-width: 810px) {
@@ -635,7 +635,7 @@ body {
           animation-fill-mode: forwards;
 }
 .header__menu--sp__bar:nth-of-type(2) {
-  top: 17px;
+  top: 14px;
 }
 .header__menu--sp__bar:nth-of-type(2).show {
   -webkit-animation-name: show-middle-bar;
@@ -654,7 +654,7 @@ body {
           animation-fill-mode: forwards;
 }
 .header__menu--sp__bar:nth-of-type(3) {
-  top: 34px;
+  top: 28px;
 }
 .header__menu--sp__bar:nth-of-type(3).show {
   -webkit-animation-name: show-bottom-bar;
