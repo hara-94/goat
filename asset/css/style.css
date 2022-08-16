@@ -711,6 +711,25 @@ body {
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
 }
+@media screen and (max-width: 810px) {
+  .main-visual__video {
+    display: none;
+  }
+}
+.main-visual__video--sp {
+  display: none;
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+@media screen and (max-width: 810px) {
+  .main-visual__video--sp {
+    display: block;
+  }
+}
 .main-visual__mask {
   position: absolute;
   top: 0;
