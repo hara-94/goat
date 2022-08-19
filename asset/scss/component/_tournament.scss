@@ -1,0 +1,47 @@
+.tournament {
+  position: relative;
+  width: 100%;
+  padding: 100px 0;
+  background-image: url("../image/dummy/game-tournament.png");
+  background-size: cover;
+
+  &__mask {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.4;
+    z-index: 1;
+  }
+
+  &__inner {
+    position: relative;
+    width: $sectionWidth;
+    max-width: $sectionMaxWidth;
+    margin: 0 auto;
+    z-index: 10;
+  }
+
+  &__heading {
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  &__text {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 60px;
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 3;
+
+    @include isTablet {
+      line-height: 2;
+    }
+  }  
+}
