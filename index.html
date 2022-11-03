@@ -1,117 +1,160 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="asset/css/style.css">
-  <title>GOAT</title>
-</head>
-<body>
-  <header class="header">
-    <div class="header__inner">
-      <a href="/" class="header__logo">
-        <img src="asset/image/logo.png" alt="ロゴ画像" class="header__logo__image">
-      </a>
-      <ul class="header__menu">
-        <li id="js-concept-link" class="header__menu__item">
-          <a class="header__menu__item__link" href="">CONCEPT</a>
-        </li>
-        <li class="header__menu__item">
-          <a class="header__menu__item__link" href="./menu">DRINK</a>
-        </li>
-        <!-- <li class="header__menu__item">
+  <head prefix="og: http://ogp.me/ns#">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta property="og:url" content="https://goat-510.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="GOAT" />
+    <meta property="og:description" content=" ページの説明文" />
+    <meta property="og:site_name" content="GOAT" />
+    <meta
+      property="og:image"
+      content="https://goat-510.com/asset/image/goat-logo-big.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="asset/css/style.css" />
+    <link rel="icon" type="image/png" href="./asset/image/favicon.png" />
+    <title>GOAT</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <a href="/" class="header__logo">
+          <img
+            src="asset/image/logo.png"
+            alt="ロゴ画像"
+            class="header__logo__image"
+          />
+        </a>
+        <ul class="header__menu">
+          <li id="js-concept-link" class="header__menu__item">
+            <a class="header__menu__item__link" href="">CONCEPT</a>
+          </li>
+          <li class="header__menu__item">
+            <a class="header__menu__item__link" href="./menu">DRINK</a>
+          </li>
+          <!-- <li class="header__menu__item">
           <a href="/game">GAME</a>
         </li> -->
-        <li id="js-access-link" class="header__menu__item">
-          <a class="header__menu__item__link" href="">ACCESS</a>
-        </li>
-      </ul>
-      <div id="js-hamburger-button" class="header__menu--sp">
-        <div id="js-hamburger-top-bar" class="header__menu--sp__bar"></div>
-        <div id="js-hamburger-middle-bar" class="header__menu--sp__bar"></div>
-        <div id="js-hamburger-bottom-bar" class="header__menu--sp__bar"></div>
+          <li id="js-access-link" class="header__menu__item">
+            <a class="header__menu__item__link" href="">ACCESS</a>
+          </li>
+        </ul>
+        <div id="js-hamburger-button" class="header__menu--sp">
+          <div id="js-hamburger-top-bar" class="header__menu--sp__bar"></div>
+          <div id="js-hamburger-middle-bar" class="header__menu--sp__bar"></div>
+          <div id="js-hamburger-bottom-bar" class="header__menu--sp__bar"></div>
+        </div>
       </div>
-    </div>
-    <div id="js-hamburger" class="hamburger">
-      <div class="hamburger__inner">
-        <ul class="hamburger__list">
-          <li class="hamburger__list__item">
-            <a id="js-hamburger-concept-link" class="hamburger__list__item__link" href="">CONCEPT</a>
-          </li>
-          <li class="hamburger__list__item">
-            <a id="js-hamburger-drinkt-link" class="hamburger__list__item__link" href="./menu">DRINK</a>
-          </li>
-          <!-- <li class="hamburger__list__item">
+      <div id="js-hamburger" class="hamburger">
+        <div class="hamburger__inner">
+          <ul class="hamburger__list">
+            <li class="hamburger__list__item">
+              <a
+                id="js-hamburger-concept-link"
+                class="hamburger__list__item__link"
+                href=""
+                >CONCEPT</a
+              >
+            </li>
+            <li class="hamburger__list__item">
+              <a
+                id="js-hamburger-drinkt-link"
+                class="hamburger__list__item__link"
+                href="./menu"
+                >DRINK</a
+              >
+            </li>
+            <!-- <li class="hamburger__list__item">
             <a id="js-hamburger-game-link" class="hamburger__list__item__link" href="">GAME</a>
           </li> -->
-          <li class="hamburger__list__item">
-            <a id="js-hamburger-access-link" class="hamburger__list__item__link" href="">ACCESS</a>
-          </li>                              
-        </ul>
+            <li class="hamburger__list__item">
+              <a
+                id="js-hamburger-access-link"
+                class="hamburger__list__item__link"
+                href=""
+                >ACCESS</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="main-visual">
+      <div class="main-visual__inner">
+        <video class="main-visual__video" autoplay loop muted playsinline>
+          <source src="./asset/video/main-movie.mp4" />
+        </video>
+        <video class="main-visual__video--sp" autoplay loop muted playsinline>
+          <source src="./asset/video/main-movie-sp.mp4" />
+        </video>
+        <div class="main-visual__mask"></div>
       </div>
     </div>
-  </header>
-  <div class="main-visual">
-    <div class="main-visual__inner">
-      <video class="main-visual__video" autoplay loop muted playsinline>
-        <source src="./asset/video/main-movie.mp4">
-      </video>
-      <video class="main-visual__video--sp" autoplay loop muted playsinline>
-        <source src="./asset/video/main-movie-sp.mp4">
-      </video>
-      <div class="main-visual__mask"></div>
-    </div>
-  </div>
-  <div class="main-visual__space"></div>
-  <div class="main">
-    <div class="main__inner">
-      <div class="catchphrase">
-        <div class="catchphrase__inner">
-          <p class="catchphrase__text">greatest of all time</p>
-        </div>
-      </div>
-      <div id="js-concept-section" class="concept">
-        <div class="concept__inner">
-          <h2 class="concept__heading">CONCEPT</h2>
-          <p class="concept__text">
-            今までに皆様が体験したことのない
-            ”史上最高のエンターテインメント”
-            <br>
-            <br>
-            ライブポーカーならではの臨場感、初心書から上級者まで楽しめるゲームシステム､
-            スキルを高め合うことができる雰囲気、本物志向のショットバー。
-            <br>
-            <br>
-            ”Greatest of All Time" の名の下に
-            こだわり抜いた空間を全てのお客様に。
-          </p>
-          <div class="concept__space"></div>
-          <img src="./asset/image/view-bg.jpg" alt="コンセプト" class="concept__image">
-        </div>
-      </div>
-      <div id="js-drink-section" class="drink">
-        <div class="drink__inner">
-          <div class="drink__image">
-            <div class="drink__image__mask"></div>
-            <div class="drink__image__heading">DRINK</div>
-          </div>
-          <p class="drink__text">
-            ソフトドリンク、アルコールで全60種をご用意。
-            <br>
-            オーセンティックなバー体験をあなたに。
-          </p>
-          <div class="drink__view-more">
-            <a class="drink__view-more__link" href="./menu">VIEW MORE</a>
-            <img src="./asset/image/arrow-right.png" alt="画像" class="drink__view-more__arrow">
+    <div class="main-visual__space"></div>
+    <div class="main">
+      <div class="main__inner">
+        <div class="catchphrase">
+          <div class="catchphrase__inner">
+            <p class="catchphrase__text">greatest of all time</p>
           </div>
         </div>
-      </div>
-      <!-- <div id="js-game-section" class="game">
+        <div id="js-concept-section" class="concept">
+          <div class="concept__inner">
+            <h2 class="concept__heading">CONCEPT</h2>
+            <p class="concept__text">
+              今までに皆様が体験したことのない ”史上最高のエンターテインメント”
+              <br />
+              <br />
+              ライブポーカーならではの臨場感、初心書から上級者まで楽しめるゲームシステム､
+              スキルを高め合うことができる雰囲気、本物志向のショットバー。
+              <br />
+              <br />
+              ”Greatest of All Time" の名の下に
+              こだわり抜いた空間を全てのお客様に。
+            </p>
+            <div class="concept__space"></div>
+            <img
+              src="./asset/image/view-bg.jpg"
+              alt="コンセプト"
+              class="concept__image"
+            />
+          </div>
+        </div>
+        <div id="js-drink-section" class="drink">
+          <div class="drink__inner">
+            <div class="drink__image">
+              <div class="drink__image__mask"></div>
+              <div class="drink__image__heading">DRINK</div>
+            </div>
+            <p class="drink__text">
+              ソフトドリンク、アルコールで全60種をご用意。
+              <br />
+              オーセンティックなバー体験をあなたに。
+            </p>
+            <div class="drink__view-more">
+              <a class="drink__view-more__link" href="./menu">VIEW MORE</a>
+              <img
+                src="./asset/image/arrow-right.png"
+                alt="画像"
+                class="drink__view-more__arrow"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- <div id="js-game-section" class="game">
         <div class="game__inner">
           <div class="game__image">
             <div class="game__image__mask"></div>
@@ -128,65 +171,88 @@
           </div>
         </div>
       </div> -->
-      <div id="js-access-section" class="access">
-        <div class="access__inner">
-          <img src="./asset/image/building.jpg" alt="" class="access__image">
-          <div class="access__space"></div>
-          <div class="access__content">
-            <h2 class="access__heading">ACCESS</h2>
-            <div class="access__address">
-              千葉県船橋市本町4-16-29
-              <br>
-              三幸本町ビル3F
-              <br>
-              各線[船橋駅]徒歩5分
-            </div>
-            <img src="./asset/image/map.jpg" alt="" class="access__map">
-            <div id="js-access-map" class="access__image--tablet">
-              <img src="./asset/image/building-tablet.jpg" alt="建物" class="access__image--tablet__image">
-              <div class="access__image--tablet__mask"></div>
-              <p class="access__image--tablet__text">
-                マップはこちら
-                <img class="access__image--tablet__icon" src="./asset/image/map-arrow.png" alt="地図アイコン">
-              </p>
+        <div id="js-access-section" class="access">
+          <div class="access__inner">
+            <img
+              src="./asset/image/building.jpg"
+              alt=""
+              class="access__image"
+            />
+            <div class="access__space"></div>
+            <div class="access__content">
+              <h2 class="access__heading">ACCESS</h2>
+              <div class="access__address">
+                千葉県船橋市本町4-16-29
+                <br />
+                三幸本町ビル3F
+                <br />
+                各線[船橋駅]徒歩5分
+              </div>
+              <img src="./asset/image/map.jpg" alt="" class="access__map" />
+              <div id="js-access-map" class="access__image--tablet">
+                <img
+                  src="./asset/image/building-tablet.jpg"
+                  alt="建物"
+                  class="access__image--tablet__image"
+                />
+                <div class="access__image--tablet__mask"></div>
+                <p class="access__image--tablet__text">
+                  マップはこちら
+                  <img
+                    class="access__image--tablet__icon"
+                    src="./asset/image/map-arrow.png"
+                    alt="地図アイコン"
+                  />
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div id="js-access-tablet-map" class="access__tablet-map">
-          <div class="access__tablet-map__inner">
-            <divj id="js-access-tablet-map-overlay" class="access__tablet-map__mask"></divj>
-            <img src="./asset/image/map.jpg" alt="地図" class="access__tablet-map__map">
+          <div id="js-access-tablet-map" class="access__tablet-map">
+            <div class="access__tablet-map__inner">
+              <divj
+                id="js-access-tablet-map-overlay"
+                class="access__tablet-map__mask"
+              ></divj>
+              <img
+                src="./asset/image/map.jpg"
+                alt="地図"
+                class="access__tablet-map__map"
+              />
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <footer class="footer">
-    <div class="footer__inner">
-      <a class="footer__logo" href="/">
-        <img src="./asset/image/logo.png" alt="ロゴ画像" class="footer__logo__image">
-      </a>
-      <div class="footer__address">
-        〒273-0005
-        <br>
-        千葉県船橋市本町4-16-29
-        <br>
-        三幸本町ビル3F
-        <br>
-        各線[船橋駅]徒歩5分
-        <br>
-        <br>
-        TEL: 070-8519-8979
-        <br>
-        Mail: pokerbargoat@gmail.com
+    <footer class="footer">
+      <div class="footer__inner">
+        <a class="footer__logo" href="/">
+          <img
+            src="./asset/image/logo.png"
+            alt="ロゴ画像"
+            class="footer__logo__image"
+          />
+        </a>
+        <div class="footer__address">
+          〒273-0005
+          <br />
+          千葉県船橋市本町4-16-29
+          <br />
+          三幸本町ビル3F
+          <br />
+          各線[船橋駅]徒歩5分
+          <br />
+          <br />
+          TEL: 070-8519-8979
+          <br />
+          Mail: pokerbargoat@gmail.com
+        </div>
+        <div class="footer__schedule">
+          平日: 14:00 - 24:00
+          <br />
+          土日(祝): 12:00 - 24:00
+        </div>
       </div>
-      <div class="footer__schedule">
-        平日: 14:00 - 24:00
-        <br>
-        土日(祝): 12:00 - 24:00
-      </div>
-    </div>
-  </footer>
-  <script src="./asset/script/index.js" type="module"></script>
-</body>
+    </footer>
+    <script src="./asset/script/index.js" type="module"></script>
+  </body>
 </html>
